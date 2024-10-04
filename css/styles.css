@@ -33,6 +33,7 @@ p{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 300px;
+    position: relative;
 }
 
 .nickname {
@@ -84,4 +85,31 @@ a {
 
 .back:hover {
     background-color: #948fea;
+}
+
+.sparkles {
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    animation: moveUpDown 2s infinite ease-in-out, scaleUpDown 2s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes scaleUpDown {
+    0%, 100% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
 }
