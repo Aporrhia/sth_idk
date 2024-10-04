@@ -1,0 +1,15 @@
+p{
+    font-style: italic;
+}
+
+.p-bold{
+    font-style: bold;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
